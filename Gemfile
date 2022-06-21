@@ -46,3 +46,4 @@ group :development do
   # gem "spring"
 end
 
+gem 'better_errors', '~> 2.9', '>= 2.9.1'

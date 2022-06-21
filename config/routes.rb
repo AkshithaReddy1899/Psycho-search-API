@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
     namespace :v1 do
       resources :users, only: [:index]
+      resources :people
     end
 end
