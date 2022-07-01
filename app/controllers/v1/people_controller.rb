@@ -1,5 +1,6 @@
 class V1::PeopleController < ApplicationController
   before_action :set_person, only: %i[show update destroy]
+  before_action :authenticate_user!, except: %i[index show]
 
   # GET /people
   def index
