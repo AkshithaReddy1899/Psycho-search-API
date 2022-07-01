@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_25_152748) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_01_084732) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,8 +19,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_25_152748) do
     t.string "country"
     t.string "state"
     t.string "image"
-    t.string "d_o_b"
-    t.string "d_o_d"
+    t.date "d_o_b"
+    t.date "d_o_d"
     t.integer "age_of_death"
     t.integer "victims"
     t.text "crime"
@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_25_152748) do
     t.decimal "long"
     t.text "weapons", null: false
     t.text "other_names", null: false
+    t.string "video"
   end
 
   create_table "users", force: :cascade do |t|
