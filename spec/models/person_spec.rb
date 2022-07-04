@@ -34,27 +34,27 @@ RSpec.describe Person, type: :model do
   end
 
   it 'to have a crime' do
-    expect(@person.crime).to eq('Serial killer involved in street prostitution along highways in Florida. She Shot and robbed seven of her male clients, claiming that her clients had either raped her or attempted to rape her, and that all of the homicides were committed in self-defense')
+    expect(@person.crime).to eq('Serial killer involved in street prostitution along highways in Florida.')
   end
 
   it 'to have last words' do
-    expect(@person.last_words).to eq("Yes, I would just like to say I'm sailing with the rock, and I'll be back, like Independence Day, with Jesus. June 6, like the movie. Big mother ship and all, I'll be back, I'll be back")
+    expect(@person.last_words).to eq("Yes, I would just like to say I'm sailing with the rock, and I'll be back")
   end
 
   it 'to have a cause of death' do
-    expect(@person.death).to eq("executed by lethal injection.")
+    expect(@person.death).to eq('executed by lethal injection.')
   end
 
   it 'to have a link' do
-    expect(@person.link).to eq("https://en.wikipedia.org/wiki/Aileen_Wuornos")
+    expect(@person.link).to eq('https://en.wikipedia.org/wiki/Aileen_Wuornos')
   end
 
   it 'to have other names' do
-    expect(@person.other_names).to eq("Sandra Kretsch, Susan Lynn Blahovec, Lee Blahovec, Cammie Marsh Greene, Lori Kristine Grody")
+    expect(@person.other_names).to eq('Sandra Kretsch, Susan Lynn Blahovec, Lee Blahovec, Cammie Marsh Greene')
   end
 
   it 'to have a weapons' do
-    expect(@person.weapons).to eq("High Standard .22 Revolver")
+    expect(@person.weapons).to eq('High Standard .22 Revolver')
   end
 
   it 'to have lat' do
@@ -66,6 +66,6 @@ RSpec.describe Person, type: :model do
   end
 
   it 'to have a video' do
-    expect(@person.video).to eq("https://www.youtube.com/watch?v=6_NzXdJWCco")
+    expect(@person.video).to eq('https://www.youtube.com/watch?v=6_NzXdJWCco')
   end
 end
